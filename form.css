@@ -15,7 +15,7 @@ body{
 	background-color: white;
 	z-index: 100;
 	margin: auto;
-	width: 50%;
+	/*width: 50%;*/
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -78,12 +78,13 @@ hr{
 footer{
 	background-color: lightgray;
 	margin: auto;
-	width: 50%;
+	/*width: 50%;*/
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	padding: 50px;
 	justify-content: space-around;
+	align-items: flex-start;
 }
 .links{
 	padding-left: 5px;
@@ -93,6 +94,42 @@ footer{
 .links:hover{
 	color: rgba(16,76,229, 1);
 }
+
+@media only screen and (max-width: 600px){
+	.div-section{
+		width: 100%;
+	}
+	footer{
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 600px) {
+	.div-section{
+		width: 80%;
+	}
+	footer{
+		width: 80%;
+	}	
+} 
+
+@media only screen and (min-width: 992px) {
+	.div-section{
+		width: 60%;
+	}
+	footer{
+		width: 60%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.div-section{
+		width: 50%;
+	}
+	footer{
+		width: 50%;
+	}
+}
+
 
 
 
